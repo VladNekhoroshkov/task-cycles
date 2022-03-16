@@ -32,11 +32,11 @@ export function iterationCount(a) {
 */
 export function symbolsReplace(message) {
     let length = 0;
-    originalStr = message.split('');
+    message = message.split('');
     do {
         length += 3;
-        originalStr[length - 1] = '_';
-    } while (length <= originalStr.length - 3);
-    changedStr = originalStr.join('');
-    return changedStr;
+        message[length - 1] = '_';
+    } while (length <= message.length - 3);
+    message = message.join('');
+    return message;
 }
